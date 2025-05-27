@@ -1,0 +1,130 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  background-color: #000;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-menu li {
+  list-style: none;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Asegurarse de que el dropdown se muestre correctamente */
+.dropdown-menu {
+  display: none;               /* Inicialmente no se muestra */
+  position: absolute;
+  background-color: #fff;      /* Fondo blanco */
+  min-width: 160px;
+  z-index: 1;
+  top: 100%;
+  left: 0;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* Mostrar el dropdown al pasar el cursor sobre el contenedor */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+
+
+
+.dropdown-menu li a {
+  color: #000;              /* Texto negro */
+  text-decoration: none;    /* Sin subrayado */
+  padding: 10px 15px;       /* Ajusta el padding */
+  display: block;           /* Que ocupe toda el área del item */
+}
+
+.dropdown-menu li a:hover {
+  color: #a25aff;           /* Cambiar el color del texto a morado */
+  background-color: transparent; /* No cambiar el fondo */
+}
+
+
+
+/* Estilo para el item principal "Parcelas" */
+.dropdown > span {
+  padding: 10px 15px;       /* Ajusta el padding si es necesario */
+  display: inline-block;    /* Asegura que el texto tenga el tamaño adecuado */
+}
+
+.dropdown > span:hover {
+  color: #a25aff;           /* Cambia el texto a morado */
+  text-decoration: none;    /* No subrayar el texto */
+}
+
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.flexSpaceCenter {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente (si es necesario) */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff9f5; /* beige pastel */
+  font-family: 'Segoe UI', sans-serif;
+}
